@@ -1,13 +1,3 @@
-/*
-Theme Name: Donner und Pflicht
-Theme URI: https://github.com/DivineDominion/dup-theme
-Author: Christian Tietze
-Author URI: http://christiantietze.de
-Description: Theme for donnerundpflicht.de
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
 /******************************************************************
 Site Name: Donner und Pflicht
 Author: Christian Tietze
@@ -49,8 +39,8 @@ tweeners.
 */
 @media only screen and (min-width: 481px) {
 
-	// styles in 481up.scss
-	@import "481up";
+  // styles in 481up.scss
+  @import "481up";
 
 } // end of media query
 
@@ -62,11 +52,11 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 768px) {
 
-	// import grids
-	@import "grid";
+  // import grids
+  @import "grid";
 
-	// styles in 768up.scss
-	@import "768up";
+  // styles in 768up.scss
+  @import "768up";
 
 } // end of media query
 
@@ -78,8 +68,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 1030px) {
 
-	// styles in 1030up.scss
-	@import "1030up";
+  // styles in 1030up.scss
+  @import "1030up";
 
 } // end of media query
 
@@ -89,8 +79,8 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
 
-	// styles in 1240up.scss
-	@import "1240up";
+  // styles in 1240up.scss
+  @import "1240up";
 
 } // end of media query
 
@@ -104,8 +94,8 @@ query for retina AND a certain size if you want. Go Nuts.
        only screen and (min--moz-device-pixel-ratio: 1.5),
        only screen and (min-device-pixel-ratio: 1.5) {
 
-	// styles in 2x.scss
-	@import "2x";
+  // styles in 2x.scss
+  @import "2x";
 
 } // end of media query
 
@@ -126,5 +116,5 @@ sense to print at the bottom. Things like nav, ads, and forms should
 be set to display none.
 */
 @media print {
-	@import "print";
+  @import "print";
 }
