@@ -471,7 +471,7 @@ LAYOUT & GRID STYLES
 *********************/
 /* line 26, ../scss/_768up.scss */
 .wrap {
-  max-width: 1140px;
+  max-width: 35em;
 }
 
 /*********************

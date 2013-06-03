@@ -4,7 +4,11 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
+                    <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 						<div id="main" class="eightcol first clearfix" role="main">
+                    <?php else: ?>
+						<div id="main" class="twelvecol first clearfix" role="main">
+                    <?php endif; ?>
 
 							<?php if (is_category()) { ?>
 								<h1 class="archive-title h2">
