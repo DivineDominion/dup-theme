@@ -119,7 +119,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   }
 }
 
-.entry-title, .single-title {
+#logo, .entry-title, .single-title {
   text-align: center;
   
   a {
@@ -129,6 +129,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
       color: $text-color;
     }
   }
+}
+
+#logo {
+  word-spacing: -0.3em;
+  text-transform: uppercase;
 }
 
 h1, .h1 {
