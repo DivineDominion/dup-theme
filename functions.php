@@ -161,5 +161,18 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/*
+ * Helpers 
+ */
+
+function dp_print_byline() {
+    $byline = <<<HTML
+<p class="byline vcard">
+    <time class="updated" datetime="%1\$s" pubdate>%2\$s</time>
+</p>
+HTML;
+
+    printf($byline, get_the_time('Y-m-d'), get_the_time(get_option('date_format')));
+}
 
 ?>

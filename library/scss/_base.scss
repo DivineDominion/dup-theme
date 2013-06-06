@@ -131,6 +131,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   }
 }
 
+.entry-title, .single-title { margin-bottom: 0; }
+
 #logo {
   word-spacing: -0.3em;
   text-transform: uppercase;
@@ -138,7 +140,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
   font-size: 2.5em;
-  line-height: 1.333em;
+  line-height: 1em;
 }
 
 h2, .h2 {
@@ -292,7 +294,9 @@ POSTS & CONTENT STYLES
 
     /* post meta */
     .byline {
-      color: #999;
+      color: #888;
+      font-size: 80%;
+      text-align: center;
 
       time {}
     }
