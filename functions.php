@@ -165,6 +165,23 @@ function bones_wpsearch($form) {
  * Helpers 
  */
 
+function dp_main_nav() {
+    wp_nav_menu(array(
+    	'container' => false,
+        'menu_id' => 'main_nav',
+    	'theme_location' => 'main-nav',
+        'depth' => 0,
+        'fallback_cb' => 'dp_main_nav_fallback'
+	));
+}
+
+function dp_main_nav_fallback() {
+    wp_page_menu( array(
+        'show_home' => 'Posts',
+        'echo'        => true
+    ) );
+}
+
 function dp_print_byline() {
     $byline = <<<HTML
 <p class="byline vcard">

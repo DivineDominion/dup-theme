@@ -185,9 +185,11 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.nav {
+#main-nav {
   border: 1px solid #ccc;
   border-bottom: 0;
+
+  ul { margin: 0; }
 
   li {
 
@@ -212,38 +214,7 @@ and more scalable.
     &:first-child {}
 
     &:last-child {}
-
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */
-    ul.sub-menu,
-    ul.children {
-
-      li {
-
-        a {
-          padding-left: 30px;
-
-          &:hover,
-          &:focus {}
-
-          &:link {}
-
-        }
-
-        &:first-child {}
-
-        &:last-child {}
-
-      }
-
-    }
-
-  } /* end .menu li */
+  }
 
   /* highlight current page */
   li.current-menu-item,
@@ -714,7 +685,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-  margin: 1.5em 10px;
+  margin: 1.5em 0;
   padding-bottom: 2.2em;
 
   form {
@@ -773,7 +744,9 @@ COMMENT FORM STYLES
 }
 
   /* comment submit button */
-  #submit {}
+  #submit {
+    font-size: 1em;
+  }
 
   /* comment form title */
   #comment-form-title {

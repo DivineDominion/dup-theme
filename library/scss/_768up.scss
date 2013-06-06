@@ -39,12 +39,14 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-.nav {
+#main-nav {
   background: #eee;
-  border: 0;
-
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ccc;
+  
   li {
-    float: left;
+    display: inline-block;
     position: relative;
 
     a {
