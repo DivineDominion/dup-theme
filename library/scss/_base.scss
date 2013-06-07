@@ -654,26 +654,32 @@ COMMENT STYLES
 
   } /* end .commentlist .comment_content */
 
-  /* comment reply link */
-  .comment-reply-link {
-    text-decoration: none;
-    float: right;
-    background: #4598bb;
-    padding: 3px 5px;
-    color: #fff;
-    opacity: 0.65;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 0.9em;
 
-    &:hover,
-    &:focus {
-      opacity: 1;
-    }
-
-  } /* end .commentlist .comment-reply-link */
 
 } /* end .commentlist */
+
+.button,
+.commentlist .comment-reply-link {
+  text-decoration: none;
+  background: #4598bb;
+  border: 0;
+  padding: 0.3em 0.5em;
+  color: #fff;
+  opacity: 1;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.9em;
+  font-family: $sans-serif;
+
+  &:hover,
+  &:focus {
+    opacity: 0.65;
+  }
+}
+
+.commentlist .comment-reply-link {
+  float: right;
+}
 
 /******************************************************************
 COMMENT FORM STYLES
