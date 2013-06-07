@@ -8,3 +8,4 @@ Bones.esproj/Project.espressostorage
 .DS_Store
 .sass-cache
 deploy.sh
+library/css/style.min.css
