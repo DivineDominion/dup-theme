@@ -33,7 +33,6 @@ single-bookmarks.php
 								<header class="article-header">
 
 									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-									<?php dp_print_byline(); ?>
 
 								</header> <!-- end article header -->
 

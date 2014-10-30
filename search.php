@@ -14,7 +14,6 @@
 								<header class="article-header">
 
 									<h3 class="search-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<?php dp_print_byline(); ?>
 
 								</header> <!-- end article header -->
 

@@ -131,7 +131,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   }
 }
 
-.entry-title, .single-title { margin-bottom: 0; }
+.entry-title { margin-top: 2em; margin-bottom: 1em; }
+.entry-title.single-title { margin-top: 1em; }
 
 #logo {
   word-spacing: -0.3em;
