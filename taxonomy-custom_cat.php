@@ -19,7 +19,11 @@ taxonomy-shoes.php
 
 				<div id="inner-content" class="wrap clearfix">
 
+            <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 						<div id="main" class="eightcol first clearfix" role="main">
+            <?php else: ?>
+						<div id="main" class="twelvecol first clearfix" role="main">
+            <?php endif; ?>
 
 							<h1 class="archive-title h2"><span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?></h1>
 

@@ -19,11 +19,11 @@ single-bookmarks.php
 
 				<div id="inner-content" class="wrap clearfix">
 
-                    <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+            <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 						<div id="main" class="eightcol first clearfix" role="main">
-                    <?php else: ?>
+            <?php else: ?>
 						<div id="main" class="twelvecol first clearfix" role="main">
-                    <?php endif; ?>
+            <?php endif; ?>
 
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
