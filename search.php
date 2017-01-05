@@ -4,7 +4,12 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
+          <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 					<div id="main" class="eightcol first clearfix" role="main">
+          <?php else: ?>
+					<div id="main" class="twelvecol first clearfix" role="main">
+          <?php endif; ?>
+          
 						<h1 class="archive-title"><span><?php _e('Search Results for:', 'bonestheme'); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
