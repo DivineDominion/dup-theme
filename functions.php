@@ -162,7 +162,7 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 /*
- * Helpers 
+ * Helpers
  */
 
 function dp_main_nav() {
@@ -186,10 +186,17 @@ function dp_print_byline() {
     $byline = <<<HTML
 <p class="byline vcard">
     <time class="updated" datetime="%1\$s" pubdate>%2\$s</time>
+    &bull;
+    <a class="author" href="%3\$s">%4\$s</a>
 </p>
 HTML;
 
-    printf($byline, get_the_time('Y-m-d'), get_the_time(get_option('date_format')));
+    printf($byline,
+      get_the_time('Y-m-d'),
+      get_the_time(get_option('date_format')),
+      esc_url(get_author_posts_url(get_the_author_meta('ID'))),
+      esc_html(get_the_author_meta('display_name'))
+    );
 }
 
 ?>
