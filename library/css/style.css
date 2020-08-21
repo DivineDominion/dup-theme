@@ -1711,8 +1711,7 @@ be set to display none.
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p, h2, h3 {
     orphans: 3;
     widows: 3;
